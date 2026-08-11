@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "checks": {
+    "component_local_rules_generate_cartesian_closure": true,
+    "once_counted_parent_hessian_is_component_direct_sum": true,
+    "nonnegative_component_action_has_attainable_joint_zero": true,
+    "occupied_p3_component_has_rank_seven": true,
+    "internal_p3_incidence_is_one_connected_component": true,
+    "complete_marginals_allow_hidden_global_lc3_failure": true,
+    "same_total_scalar_control_can_have_p3_rank_six": true,
+    "narrow_descriptors_do_not_select_joint_completion": true
+  },
+  "dimensions": {
+    "cartesian_closure": 6,
+    "hidden_diagonal_closure": 2,
+    "positive_p3_rank": 7,
+    "control_p3_rank": 6,
+    "joint_hessian_rank": 12
+  },
+  "claim_boundary": {
+    "joint_law_to_occupation": "proved_in_declared_enriched_class",
+    "narrow_reduct_entailment": false,
+    "nature_level_realization": "untested",
+    "ambient_parent_exhaustivity": "open"
+  }
+}

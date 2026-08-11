@@ -1,0 +1,597 @@
+\section{P3 closure spine}
+\label{sec:p3closurespine}
+
+The detailed P3 typed-role extraction, O/Q and M/G stabilizer analysis and
+cotangent-port construction are preserved in
+Appendix~\ref{app:p3technical}.  The first theorem below reconstructs the
+positive quotient
+\[
+ (E_{P3}^{\rm phys},K_*),\qquad \dim E_{P3}^{\rm phys}=7,
+\]
+from a smaller support--port packet.  The subsequent representation argument
+then uses its canonical exterior action
+\[
+ \mathsf C_{\rm ext}(v)=\varepsilon(v)
+ +\iota_{K_*(v,\cdot)},
+\]
+and the normalized two-leg record factor.  The appendix proves exactly which
+complete first-jet, metric, typing and operational-port premises are required;
+it does not import their physical base--seed occupation into the theorems
+below.
+
+The proof spine should be read in five steps.  First, the source-owned support
+structure isolates two singleton roles and two unresolved role planes.
+Second, ordered ports and the independent unit reconstruct a typed rank-seven
+carrier, while the decoder preserves that rank in the body.  Third, the
+class-minimal variational law occupies the reconstructed packet rather than
+adding occupation as a separate postulate.  Fourth, the operator-square and
+pointed-record terms produce the Clifford--record realization.  Finally, the
+public pair test asks whether its source-whitened anticommutator relation can
+be evaluated without terminal fitting.  Thus the sequence is
+\[
+ \begin{gathered}
+ \text{support structure}
+ \longrightarrow \text{rank-seven reconstruction}
+ \longrightarrow \text{variational occupation}
+ \\
+ \longrightarrow \text{Clifford--record packet}
+ \longrightarrow \text{empirical pair falsifier}.
+ \end{gathered}
+\]
+The first four arrows are conditional internal results; the last is the
+empirical decision frontier and currently remains data-ineligible.
+
+\subsection{Tau-local origin of standard subsystem composition}
+\label{sec:taustandardcomposition}
+
+The two-leg record carrier used later should not be inserted merely because
+standard four-dimensional notation uses a tensor product.  Let $H_0$ and
+$H_1$ be finite occupied subhypergraphs of the one universal seed--body
+realization.  Call them \emph{parent relation-free} when no occupied primitive
+incidence meets both supports.  For this scope impose the following finite
+parent-law clauses:
+\begin{enumerate}[label=(LC\arabic*),nosep]
+\item every primitive closure rule has connected source support contained in
+  one occupied component;
+\item a rule supported in $H_i$ has output support inside the component
+  closure of $H_i$, so it creates neither a bridge to $H_{1-i}$ nor a shared
+  external mediator;
+\item the primitive component rules exhaust joint admissibility: there is no
+  additional global accept/reject predicate on otherwise lawful endpoint
+  pairs; and
+\item the finite record linearization is source faithful and inherits the
+  source-rigid unrescaled monoidal metric.
+\end{enumerate}
+The first three clauses concern closure-set factorization.  The fourth fixes
+the common action normalization after factorization; it is not needed for the
+abstract tensor shape.
+
+\begin{theorem}[Tau-local standard subsystem composition]
+\label{thm:taustandardcomposition}
+Under LC1--LC3,
+\begin{equation}
+ \boxed{
+ \mathrm{Cl}_\tau(H_0\sqcup H_1)
+ \simeq
+ \mathrm{Cl}_\tau(H_0)\times\mathrm{Cl}_\tau(H_1).}
+ \label{eq:tauclosureproduct}
+\end{equation}
+Consequently the finite record algebras obey the canonical isomorphism
+\begin{equation}
+ \boxed{
+ \mathbb C^{\mathrm{Cl}_\tau(H_0\sqcup H_1)}
+ \simeq
+ \mathbb C^{\mathrm{Cl}_\tau(H_0)}
+ \otimes
+ \mathbb C^{\mathrm{Cl}_\tau(H_1)}.}
+ \label{eq:tautensorlinearization}
+\end{equation}
+Local parent operations have the standard commuting form
+\begin{equation}
+ T_0\longmapsto T_0\otimes I,\qquad
+ T_1\longmapsto I\otimes T_1,\qquad
+ [T_0\otimes I,I\otimes T_1]=0.
+ \label{eq:taulocaloperators}
+\end{equation}
+Under LC4 the isomorphism in
+Eq.~\eqref{eq:tautensorlinearization} is isometric in the inherited common
+action unit, with no independent central tensor gain.
+\end{theorem}
+
+\begin{proof}
+Take any finite global closure sequence starting from $H_0\sqcup H_1$.
+LC1 assigns every primitive step to one component, and LC2 keeps its output
+inside that component.  Projecting the sequence onto the two supports
+therefore gives a pair of lawful local closure sequences and hence a map from
+the left side of Eq.~\eqref{eq:tauclosureproduct} to the right side.
+
+Conversely, rules on disjoint supports commute: a rule on $H_0$ changes
+neither the match nor the output of a rule on $H_1$, and conversely.
+Arbitrary local closure sequences can therefore be interleaved into a lawful
+global sequence.  LC3 forbids a second global condition from deleting the
+resulting endpoint pair.  The two constructions are inverse, proving
+Eq.~\eqref{eq:tauclosureproduct}.
+
+For finite sets $A$ and $B$, the delta-basis correspondence
+\begin{equation}
+ \delta_{(a,b)}\longleftrightarrow\delta_a\otimes\delta_b
+ \label{eq:taudeltatensor}
+\end{equation}
+extends uniquely to the algebra isomorphism
+$\mathbb C^{A\times B}\simeq\mathbb C^A\otimes\mathbb C^B$, proving
+Eq.~\eqref{eq:tautensorlinearization}.  Component-local rules act on only one
+delta factor, which gives Eq.~\eqref{eq:taulocaloperators}.  Finally LC4 makes
+the primitive delta bases orthonormal in the inherited source metric and the
+source-rigid monoidal continuation excludes a separate positive central
+rescaling.  This proves the metric statement.
+\end{proof}
+
+\paragraph{Sharp controls and scope.}
+Let both local alternative sets be $\{0,1\}$ while the global endpoint set is
+only
+\begin{equation}
+ \mathcal D=\{(0,0),(1,1)\}.
+ \label{eq:tauhiddendiagonal}
+\end{equation}
+Both marginal projections are onto, yet
+$\dim\mathbb C^{\mathcal D}=2<4$; this hidden global relation violates LC3.
+A crossing rewrite $(i,j)\mapsto(1-i,1-j)$ generates exactly the same
+diagonal orbit and violates LC1--LC2.  Thus disjoint labels, complete
+marginals, action valuation or a vanishing mixed Hessian do not imply
+Eq.~\eqref{eq:tauclosureproduct}.  A positive central metric rescaling
+preserves the tensor algebra but violates the isometric part of LC4.
+
+The theorem is a Tau-only derivation inside the declared enriched
+component-local parent class.  It does not show that the old-bare
+admissibility skeleton or the unrestricted physical base--seed law realizes
+LC1--LC4 on every claimed isolated scope.  If a crossing hyperedge is
+occupied, the relation-free premise fails and this closure-factorization
+theorem simply does not apply.  Retaining a tensor carrier as the kinematic
+envelope of interacting quantum states then uses the separate strong
+dagger-monoidal quantum representation result; it does not follow from
+Eq.~\eqref{eq:tauclosureproduct} alone.
+
+The full seven-role carrier need not be named in advance.  Let
+$E_{\rm rel}$ be the positive six-dimensional relative source carrier and let
+$P_{BMG},P_{OQ},P_{RMG}$ be commuting $K_{\rm rel}$-self-adjoint
+projectors.  Write $E_{\epsilon}$ for their joint binary eigenspaces.
+
+\begin{theorem}[Support--port reconstruction and class-minimal enriched-law realization]
+\label{thm:p3supportportparent}
+Assume
+\begin{equation}
+ \dim E_{100}=1,\qquad \dim E_{010}=2,\qquad
+ \dim E_{001}=1,\qquad \dim E_{101}=2,
+ \label{eq:p3supportmultiplicities}
+\end{equation}
+with every other joint eigenspace zero.  Assume further that the two
+two-dimensional blocks possess source-owned quotient-basic ordered
+cotangent decompositions
+\begin{equation}
+ E_{010}=L_O\oplus L_Q,
+ \qquad E_{101}=L_M\oplus L_G,
+ \label{eq:p3orderedports}
+\end{equation}
+and that the common-unit vector $z_U$ splits directly from $E_{\rm rel}$.
+Then
+\begin{equation}
+ E_{P3}^{\rm phys}
+ =L_B\oplus L_O\oplus L_R\oplus L_U
+  \oplus L_Q\oplus L_M\oplus L_G,
+ \qquad \dim E_{P3}^{\rm phys}=7,
+ \label{eq:p3supportportrankseven}
+\end{equation}
+where $L_B=E_{100}$, $L_R=E_{001}$ and $L_U=\mathbb Rz_U$.
+If a smooth body realization has a local left decoder, this rank is
+preserved in the stabilized body.
+
+Normalize the already stabilized body branch by
+$\widehat\Gamma_{\rm body}
+=\Gamma_{\rm body}-\Gamma_{\rm body}[M_*]\geq0$ on its declared stability
+basin.  Write $\Phi_{\rm port}=\Gamma_{\rm port}^{\rm CTC}$ and normalize the
+remaining post-body defects by
+$\Phi_{P3}=\Gamma_{P3}^{\rm enr}/\mathcal A_*$ and
+$\Phi_{\rm rec}=\Gamma_{\rm rec}/\mathcal A_*$.  Define the proposed
+class-minimal enriched P3 law within the declared finite,
+source-irredundant one-copy completion class by
+\begin{equation}
+ \boxed{
+ \mathcal L_{P3}^{\min}
+ =\left(
+ \mathcal D_{\rm SF},
+ \widehat\Gamma_{P3}^{\min}
+ =\widehat\Gamma_{\rm body}
+ +\mathcal A_*\bigl(
+   \Phi_{\rm port}+\Phi_{P3}+\Phi_{\rm rec}\bigr);
+ \operatorname{Real}_B,Q_B,\Omega_\varnothing;
+ \mathsf{Phys}=\operatorname*{Argmin}_{\mathcal D_{\rm SF}}
+ \widehat\Gamma_{P3}^{\min}
+ \right),}
+ \label{eq:p3minimalparentlaw}
+\end{equation}
+where $\mathcal D_{\rm SF}$ owns
+Eq.~\eqref{eq:p3supportmultiplicities}, the unit split and the two protected
+cotangent source covectors;
+$\Gamma_{\rm port}^{\rm CTC}$ is the normalized two-block
+Fenchel--Young law; $\Gamma_{P3}^{\rm enr}$ is the once-counted graph plus
+operator-square law; $\Gamma_{\rm rec}$ is the normalized two-leg record
+law; $Q_B\operatorname{Real}_B=I$; and $\Omega_\varnothing$ is the pointed
+cyclic exterior root with the complete physical P3 null and no bypass.  All
+three $\Phi$ terms are nonnegative dimensionless defects in the one common
+action unit.  Then the physical branch selected by
+Eq.~\eqref{eq:p3minimalparentlaw} satisfies
+\begin{equation}
+ \boxed{
+ (B_\tau^{\rm phys},s_U,\mathcal L_{P3}^{\min})
+ \Longrightarrow \mathfrak P_{P3}^{\min},}
+ \label{eq:p3minimalparentarrow}
+\end{equation}
+where $\mathfrak P_{P3}^{\min}$ is the class-minimal faithful typed rank-seven
+Clifford--record packet, unique up to typed source isometry and typed unitary
+equivalence in the declared source-irredundant one-copy class.
+
+The earlier narrow reduct does not entail
+$\mathcal L_{P3}^{\min}$: an equal-upstream no-response completion omits a
+required ordered port, while dependent-unit and equal-Gram commuting controls
+independently remove the rank and operator-square conclusions.
+\end{theorem}
+
+\begin{proof}
+Simultaneous orthogonal spectral decomposition of the three projectors gives
+the intrinsic blocks $L_B\widehat\oplus E_{010}
+\widehat\oplus L_R\widehat\oplus E_{101}$.  The two ordered cotangent
+decompositions split the only repeated blocks, and the direct unit split adds
+one independent line, proving Eq.~\eqref{eq:p3supportportrankseven}.
+Differentiating the decoder identity gives
+$DQ_BD\operatorname{Real}_B=I$, so body realization cannot collapse a typed
+direction.  The two Fenchel--Young graph terms have zero response Schur
+remainder.  The faithful separating operator-square term vanishes exactly on
+$C(u)C(v)+C(v)C(u)=2K_*(u,v)I$, and eliminating the graph response leaves
+that selector once.  The pointed exterior root and normalized record factor
+then give $J_{\rm ext}^\dagger J_{\rm ext}=I_{256}$ and faithful cyclic
+occupation.  The canonical exterior Clifford incidence, its graph response,
+the two metric-dual ordered ports, the stabilized body and the normalized
+two-leg record root form an explicit simultaneous zero of every term in
+$\widehat\Gamma_{P3}^{\min}$.  Its global minimum is therefore zero.  Since
+all summands are nonnegative, every global minimizer makes every summand
+vanish; packet occupation follows from the declared variational law and is
+not a separate common-zero premise.  Complete physical null and no bypass
+give the stated
+minimal-class uniqueness.  The three cited controls prove non-entailment from
+the narrow reduct.  Appendix~\ref{app:p3technical} gives the componentwise
+deletion certificate.  QED.
+\end{proof}
+
+Equation~\eqref{eq:p3minimalparentarrow} closes a formal ownership arrow only
+after the proposed physical law is specified.  It does not prove that Nature
+realizes this proposal, and it does not establish ambient-parent
+exhaustivity from finite readouts.
+
+\subsection{One common law for locality and the connected P3 packet}
+\label{sec:jointlocalp3}
+
+The locality theorem and the P3 occupation theorem act on different parts of
+the source decomposition.  Let $\pi_0(s_U)$ denote the connected components
+of occupied primitive incidence and define
+\begin{equation}
+ \boxed{
+ \widehat\Gamma_{\rm CLP3}[X]
+ =\sum_{C\in\pi_0(s_U)}\widehat\Gamma_C[X_C],
+ \qquad K_{\rm CLP3}=\bigoplus_C K_C.}
+ \label{eq:jointlocalp3action}
+\end{equation}
+Assume that primitive rules exhaust their full connected supports, preserve
+component closure, and admit no additional cross-component multiplier or
+hidden endpoint predicate; that every component action is nonnegative,
+once-counted and has an attainable zero; and that realization is source
+faithful in the common unrescaled action unit.  On the occupied connected
+component $C_{P3}$ take $\widehat\Gamma_C$ to be the already defined
+$\widehat\Gamma_{P3}^{\min}$ of
+Eq.~\eqref{eq:p3minimalparentlaw}.
+
+\begin{theorem}[Component-local P3 joint occupation]
+\label{thm:jointlocalp3}
+Under these hypotheses every global minimizer of
+Eq.~\eqref{eq:jointlocalp3action} satisfies LC1--LC4 on every
+parent-relation-free support pair and occupies the complete typed rank-seven
+packet $\mathfrak P_{P3}^{\min}$ on $C_{P3}$.  The earlier narrow
+base--seed/body reduct does not entail this common law.
+\end{theorem}
+
+\begin{proof}
+Full-support assignment and component preservation give LC1--LC2.  Primitive
+exhaustivity and absence of an extra cross-component multiplier give LC3,
+while source-faithful unrescaled realization is LC4.  Hence
+Theorem~\ref{thm:taustandardcomposition} applies to every relation-free pair.
+Nonnegativity, disjoint component variables and attainability give
+\begin{equation}
+ \operatorname*{Argmin}\widehat\Gamma_{\rm CLP3}
+ =\prod_C\operatorname*{Argmin}\widehat\Gamma_C,
+ \qquad \min\widehat\Gamma_{\rm CLP3}=0.
+ \label{eq:jointlocalp3argmin}
+\end{equation}
+Restriction to $C_{P3}$ is therefore a zero of
+$\widehat\Gamma_{P3}^{\min}$, so
+Theorem~\ref{thm:p3supportportparent} forces the complete rank-seven
+Clifford--record packet.  Its internal incidences do not violate LC1--LC2:
+they belong to one connected component and are never factorized by the
+theorem.
+
+For non-entailment, keep the local rules and complete marginals but impose the
+hidden diagonal endpoint relation in Eq.~\eqref{eq:tauhiddendiagonal}; LC3
+fails.  Independently replace the P3 realization by the equal-total-scalar
+rank-six missing-port control used in the support--port deletion certificate.
+Their product has the same earlier narrow descriptors while failing both
+targets.  Thus that reduct cannot select
+Eq.~\eqref{eq:jointlocalp3action}.
+\end{proof}
+
+This theorem closes compatibility and common-law occupation inside the
+declared enriched completion.  It is not a proof that Nature realizes
+$\widehat\Gamma_{\rm CLP3}$ or that the listed components exhaust the ambient
+parent.
+
+\subsection{Why the class-minimal law is not a terminal fit}
+
+Here \emph{class-minimal} means componentwise minimal only within the
+declared finite, source-irredundant one-copy completion class.  In both the
+law and packet symbols, the superscript ``min'' has this restricted meaning;
+it does not assert
+that the law is Nature's unique or globally minimal parent law.  Nor is the
+functional fitted backwards from terminal residuals: its inputs are frozen
+on the source side before endpoint evaluation.  The origin of its clauses is
+as follows.
+\begin{enumerate}[label=(\roman*),nosep]
+\item The support multiplicities and projectors are inherited from the
+  source-role structure.  Their realization by the unrestricted physical
+  base--seed system remains an explicit completion premise.
+\item The O/Q and M/G cotangent ports are minimal preimages, within this
+  class, of already required ordered dualities.  Deleting either port leaves
+  an explicit typed swap symmetry.
+\item The independent common unit and the left decoder have separate rank
+  roles: the unit raises source rank from six to seven, while the decoder
+  prevents collapse in body realization.  Neither is a terminal-specific
+  gain.
+\item The state-neutral operator-square term is the genuinely new
+  Tau-specific cross-role clause.  Without it, a commuting packet can retain
+  the same normalized marginal trace Gram.
+\item The pointed cyclic exterior root and no-bypass clause are required by
+  the faithful full-rank nontracial and extra-record countermodels.  They
+  select record occupation and completeness only within the declared class.
+\item The two-leg record tensor is not inferred from a terminal residual.
+  Theorem~\ref{thm:taustandardcomposition} derives it from the independent
+  component-local no-bridge closure law; the diagonal hidden-relation model
+  prevents replacing that source law by complete marginals or action
+  additivity.
+\end{enumerate}
+Thus Theorem~\ref{thm:p3supportportparent} is a noncircular internal
+realization theorem for a source-frozen proposed law.  It is not a deeper
+derivation of that law from the narrow parent, and it does not exclude richer
+parent laws with the same physical zero locus.
+
+\begin{theorem}[Pointed exterior-seed closure and rank-only no-go]
+\label{thm:p3exteriorseedclosure}
+Assume that the occupied typed P3 seed owns the complete oriented word
+grammar $\Lambda^\bullet E_{P3}$, explicitly occupies the empty word
+$\Omega_\varnothing$, and that the base realizes
+$\mathsf C_{\rm ext}(v)$ as in Eq.~\eqref{eq:p3extclifford}.  Assume also that
+the normalized two-leg Frobenius record root generates an orthonormal record
+basis $r_0,r_1$ with no independent bypass.  Then the vectors
+\begin{equation}
+ \Psi_{I,a}
+ =\mathsf C_{\rm ext}(e_{i_k})\cdots
+  \mathsf C_{\rm ext}(e_{i_1})\Omega_\varnothing\otimes r_a,
+ \qquad I=\{i_1<\cdots<i_k\}\subseteq\{1,\ldots,7\},
+ \quad a\in\{0,1\},
+ \label{eq:p3pointedorbit}
+\end{equation}
+form an orthonormal basis of $\mathcal F_{P3}$.  Equivalently, the root-orbit
+map $J_{\rm ext}:\mathbb C^{256}\to\mathcal F_{P3}$ obeys
+\begin{equation}
+ \boxed{J_{\rm ext}^{\dagger}J_{\rm ext}=I_{256}.}
+ \label{eq:p3exteriorgramlock}
+\end{equation}
+Consequently the relation, source-symmetry and cyclic trace--GNS conditions
+are simultaneous kinematic consequences on this declared carrier; no
+independent Gram-isometry action term is required there.
+
+Full orbit rank, source nonloss and equal central block weights are not
+sufficient substitutes.  On
+$\mathcal A=M_8(\mathbb C)^{\oplus4}$ with normalized trace, choose
+\begin{equation}
+ h_\epsilon
+ =\bigoplus_{b=1}^{4}
+  \operatorname{diag}(1+\epsilon,1-\epsilon,1,\ldots,1),
+ \qquad 0<\epsilon<1,
+ \label{eq:p3nontracialdensity}
+\end{equation}
+and $J_\epsilon(a)=a h_\epsilon^{1/2}$ on the regular carrier.  Then
+$J_\epsilon$ has rank 256 and equal weight $1/4$ on every central block, but
+\begin{equation}
+ J_\epsilon^\dagger J_\epsilon=R_{h_\epsilon}\ne I,
+ \qquad
+ \omega_\epsilon([E_{01}^{(1)},E_{10}^{(1)}])=\frac{\epsilon}{16}\ne0.
+ \label{eq:p3rankonlycontrol}
+\end{equation}
+Thus this faithful full-rank root state is nontracial and retains a nonzero
+metric defect.
+\end{theorem}
+
+\begin{proof}
+Creation followed by $K_*$-adjoint contraction sends the empty exterior word
+to the signed wedge basis vector labelled by the same subset $I$.  Distinct
+subsets are orthogonal, and every subset occurs once.  Tensoring with the two
+orthonormal record vectors therefore gives exactly $2^7\cdot2=256$
+orthonormal vectors, proving Eq.~\eqref{eq:p3exteriorgramlock}.  The Clifford
+relations give relation generation, the induced exterior action transports
+every source isometry, and the full word orbit is cyclic; the normalized
+regular vector state is the represented trace.
+
+For the control, positivity of $h_\epsilon$ makes right multiplication by
+$h_\epsilon^{1/2}$ invertible, so the orbit map has full rank.  Every block
+has trace eight, hence the four central weights are equal.  Direct evaluation
+in the normalized regular inner product gives
+$J_\epsilon^\dagger J_\epsilon=R_{h_\epsilon}$.  Finally
+$[E_{01},E_{10}]=E_{00}-E_{11}$, whose $h_\epsilon$-weighted normalized trace
+in one of the four blocks is $2\epsilon/32=\epsilon/16$.  The root state is
+therefore not tracial and its Gram cannot be the source identity. QED.
+\end{proof}
+
+The positive half of Theorem~\ref{thm:p3exteriorseedclosure} is conditional
+on physical ownership of the complete pointed exterior grammar.  The
+negative half is an exact countermodel: dimension, rank and the retained
+discrete block symmetries cannot replace that source-owned pointed metric.
+The unrestricted physical base--seed law has not yet been shown to own this
+grammar.
+
+
+Appendix~\ref{app:p3certificate} packages the same requirement as an exact
+complete-incidence characterization: within the declared finite
+source-irredundant Clifford--recovery class, a minimal faithful typed P3
+subpacket exists uniquely up to typed unitary equivalence if and only if the
+parent owns the complete rank-seven incidence.  This is a characterization of
+the missing object, not a proof of its unrestricted physical existence.
+
+
+The certificate also admits one finite positive source selector.  On the
+dimensionless normalized quotient $(E_{P3}^{\rm phys},K_*)$, let
+$n=\dim E_{P3}^{\rm phys}=7$, let $C:E_{P3}^{\rm phys}\to
+\mathcal A_{\rm body}^{\rm sa}$ be linear, and let $\tau$ be a faithful
+normalized trace.  Define
+\begin{equation}
+ \mathcal V_{\rm OS}[C]
+ = \frac{\mathcal A_*}{2}
+ \int_{S(E_{P3},K_*)}
+ \tau\!\left[
+ (C(v)^2-I)^\dagger(C(v)^2-I)
+ \right]d\mu(v),
+ \label{eq:p3operatorsquarefunctional}
+\end{equation}
+where $d\mu$ is normalized orthogonal-invariant sphere measure.  Before
+unit-sphere restriction the defect is $C(v)^2-K_*(v,v)I$, so the common
+action unit $\mathcal A_*$ restores dimensions without a role-dependent gain.
+For a $K_*$-orthonormal frame, write $A_a=C(e_a)$,
+$d_a=A_a^2-I$, and $h_{ab}=A_aA_b+A_bA_a$.  The fourth sphere moments give
+the exact finite formula
+\begin{equation}
+ \frac{2\mathcal V_{\rm OS}[C]}{\mathcal A_*}
+ =\frac{1}{n(n+2)}\left[
+ 2\sum_a\lVert d_a\rVert_\tau^2
+ +\left\lVert\sum_a d_a\right\rVert_\tau^2
+ +\sum_{a<b}\lVert h_{ab}\rVert_\tau^2
+ \right].
+ \label{eq:p3operatorsquarefinite}
+\end{equation}
+
+\begin{theorem}[Operator-square source selector]
+\label{thm:p3operatorsquareselector}
+For a faithful normalized trace,
+$\mathcal V_{\rm OS}[C]\geq0$, with equality if and only if
+\begin{equation}
+ C(v)^2=K_*(v,v)I
+ \quad\hbox{for every }v\in E_{P3}^{\rm phys}.
+ \label{eq:p3operatorsquarezero}
+\end{equation}
+Equivalently,
+$C(u)C(v)+C(v)C(u)=2K_*(u,v)I$.  The zero set is invariant under every
+$K_*$-orthogonal source-frame change.
+\end{theorem}
+
+\begin{proof}
+The integrand in Eq.~\eqref{eq:p3operatorsquarefunctional} is continuous and
+nonnegative.  Faithfulness of $\tau$ makes a zero integral equivalent to a
+zero operator defect on the unit sphere; homogeneity extends the result to
+all $v$.  Polarization gives the anticommutator, and the reverse implication
+is immediate.  Orthogonal invariance follows from invariance of $K_*$ and
+$d\mu$.  Finally,
+$\mathbb E[v_a^4]=3/[n(n+2)]$,
+$\mathbb E[v_a^2v_b^2]=1/[n(n+2)]$, and the odd moments vanish, yielding
+Eq.~\eqref{eq:p3operatorsquarefinite}.
+\end{proof}
+
+This selector contains information absent from the scalar Gram matrix.  The
+canonical Clifford family and seven commuting four-qubit Pauli-$Z$ words act
+on the same 16-dimensional carrier and both obey
+$\tau(A_aA_b)=\delta_{ab}$.  The finite certificate nevertheless gives
+\begin{equation}
+ \frac{2\mathcal V_{\rm OS}^{\rm Clifford}}{\mathcal A_*}=0,
+ \qquad
+ \frac{2\mathcal V_{\rm OS}^{\rm commuting}}{\mathcal A_*}=\frac{4}{3}.
+ \label{eq:p3operatorsquarecontrol}
+\end{equation}
+Thus scalar Hessian/Gram data cannot select the physical packet, whereas the
+operator-valued source term can.
+
+Appendix~\ref{app:p3ownership} gives the staged enriched-parent functional
+whose nonnegative zero locus combines this operator-square law with the P3
+handoff without double counting.  That theorem proves ownership inside the
+declared enriched completion.  It does not prove that the unrestricted
+physical base--seed law realizes or occupies the enrichment.
+
+\subsection{Handoff to the joint-terminal assembly}
+
+The results above close only the algebra/representation level. Foundation
+Paper VII-A separately owns the once-counted terminal functional, the Born
+effect derivative and the conditional Einstein--Maxwell--matter equations.
+Combining VII-A with Theorem~\ref{thm:p3supportportparent} is therefore a
+cross-paper dependency composition, not another theorem proved in this
+technical paper. In particular, rank-seven typing or nonzero activation must
+not be mistaken for unrestricted physical occupation of the complete packet.
+
+
+\section{Class-minimal enriched-law closure and empirical frontier}
+\label{sec:selectionfrontier}
+
+The earlier narrow reduct has the exact non-entailment
+\begin{equation}
+ \boxed{
+ (B_\tau^{\rm phys},s_U,\mathcal L_{\rm narrow})
+ \not\Longrightarrow
+ \mathfrak P_{P3}^{\min}.
+ }
+ \label{eq:narrowparentnogo}
+\end{equation}
+The no-response port control already proves Eq.~\eqref{eq:narrowparentnogo};
+the dependent-unit, equal-Gram commuting and nontracial-root controls locate
+three further independent failures.  It is therefore impossible to remove
+this no-go by another manipulation of the unchanged reduct.
+
+Theorem~\ref{thm:p3supportportparent} instead supplies an explicit proposed
+physical law and proves
+\begin{equation}
+ \boxed{
+ (B_\tau^{\rm phys},s_U,\mathcal L_{P3}^{\min})
+ \Longrightarrow \mathfrak P_{P3}^{\min}.
+ }
+ \label{eq:decisiveparentarrow}
+\end{equation}
+Thus the formal parent-law realization and occupation arrow is closed inside
+the declared enriched physical MVP.  The phrase ``Nature realizes this law''
+is not an additional conclusion that can be proved from an unspecified
+parent: it is the empirical status of the proposed law.  Likewise,
+Eq.~\eqref{eq:decisiveparentarrow} does not establish that the selected
+connected packet exhausts every ambient source extension.
+
+Two scientific routes remain, but they have different status:
+\begin{enumerate}
+\item \emph{Deeper-origin route.}  Derive
+  $\mathcal L_{P3}^{\min}$ from a more primitive enriched base--seed law.  This
+  could strengthen the theory, but is no longer required for the internal
+  consistency of the stated completion; Eq.~\eqref{eq:narrowparentnogo}
+  forbids obtaining it from the unchanged narrow reduct.  The standard
+  subsystem-composition part of this route is now closed conditionally by
+  Theorem~\ref{thm:taustandardcomposition}; the remaining deeper-origin debt
+  concerns physical realization of LC1--LC4 and of the full support--port,
+  operator-square and pointed-root law.
+\item \emph{Discriminator route.}  Freeze a source-side morphological
+  descriptor and derive a gain-free, parameter-free relation between at least
+  two terminal readouts that is not implied by the corresponding standard
+  comparator.  The immediate algebraic target is
+  $\{C_a,C_b\}/2=\delta_{ab}I$ in a source-whitened frame; the stronger
+  $\mathcal O_{P1|P3}=0$ requires an independently certified global
+  source-completeness premise.  Any endpoint prediction must be fixed before
+  data are scored.
+\end{enumerate}
+Failure of a source-frozen discriminator demotes the proposed physical law.
+Neither route may be repaired by adding another standard-limit recovery or by
+selecting source structure from terminal residuals.

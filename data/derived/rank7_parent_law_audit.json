@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks_passed": 22,
+  "checks_total": 22,
+  "failed_checks": [],
+  "checks": {
+    "support_projectors_self_adjoint": true,
+    "support_projectors_idempotent": true,
+    "support_projectors_commute": true,
+    "joint_multiplicities_are_1_2_1_2": true,
+    "support_only_stabilizer_order_is_4": true,
+    "one_port_stabilizer_order_is_2": true,
+    "two_port_stabilizer_is_trivial": true,
+    "six_relative_lines_have_rank_6": true,
+    "independent_unit_gives_rank_7": true,
+    "dependent_unit_gives_rank_6": true,
+    "unit_controls_have_equal_total_cost": true,
+    "redundant_body_realization_has_rank_7": true,
+    "smooth_left_decoder_is_exact": true,
+    "collapsed_body_realization_has_rank_6": true,
+    "clifford_squares_are_state_neutral": true,
+    "clifford_mixed_anticommutator_vanishes": true,
+    "commuting_control_has_identity_trace_gram": true,
+    "commuting_control_fails_state_neutral_norm": true,
+    "normalized_action_components_are_nonnegative": true,
+    "explicit_common_zero_witness_exists": true,
+    "equal_gram_commuting_control_has_positive_action": true,
+    "zero_floor_forces_componentwise_zero": true
+  },
+  "diagnostics": {
+    "fingerprints": {
+      "B": [
+        1,
+        0,
+        0
+      ],
+      "O": [
+        0,
+        1,
+        0
+      ],
+      "R": [
+        0,
+        0,
+        1
+      ],
+      "Q": [
+        0,
+        1,
+        0
+      ],
+      "M": [
+        1,
+        0,
+        1
+      ],
+      "G": [
+        1,
+        0,
+        1
+      ]
+    },
+    "joint_multiplicities": {
+      "100": 1,
+      "010": 2,
+      "001": 1,
+      "101": 2
+    },
+    "support_stabilizer_order": 4,
+    "one_port_stabilizer_order": 2,
+    "two_port_stabilizer_order": 1,
+    "independent_packet_rank": 7,
+    "dependent_packet_rank": 6,
+    "body_realization_rank": 7,
+    "collapsed_body_realization_rank": 6,
+    "selected_action_components": {
+      "shifted_body": 0.0,
+      "ordered_ports": 0.0,
+      "graph_handoff": 0.0,
+      "operator_square": 0.0,
+      "record_root": 0.0,
+      "decoder": 2.1281525885478956e-31
+    },
+    "selected_total_action": 2.1281525885478956e-31,
+    "commuting_control_operator_square_action": 0.5000000000000002
+  },
+  "claim_boundary": {
+    "minimal_law_to_packet_realization": "proved_by_global_minimization_in_declared_class",
+    "separate_common_zero_occupation_assumption_required": false,
+    "narrow_reduct_entails_minimal_law": false,
+    "empirical_realization_by_nature": "untested",
+    "ambient_parent_exhaustivity": "open"
+  }
+}

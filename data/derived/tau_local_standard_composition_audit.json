@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "checks": {
+    "component_local_rules_generate_cartesian_closure": true,
+    "delta_linearization_has_tensor_rank": true,
+    "independent_local_operators_commute": true,
+    "relation_free_action_is_kronecker_sum": true,
+    "canonical_metric_is_unrescaled_isometry": true,
+    "complete_marginals_allow_hidden_global_relation": true,
+    "crossing_rule_destroys_cartesian_factorization": true,
+    "abstract_tensor_shape_does_not_fix_metric_scale": true
+  },
+  "dimensions": {
+    "first_closure": 2,
+    "second_closure": 3,
+    "cartesian_closure": 6,
+    "hidden_diagonal_closure": 2
+  },
+  "errors": {
+    "local_commutator": 0.0,
+    "kronecker_sum": 0.0,
+    "canonical_isometry": 0.0,
+    "rescaled_isometry": 2.449489742783178
+  },
+  "claim_boundary": {
+    "tau_local_composition": "proved_inside_component_local_no_bridge_closure_class",
+    "old_bare_entailment": false,
+    "physical_base_seed_occupation": "open",
+    "interaction_scope": "crossing_incidence_invalidates_relation_free_premise"
+  }
+}
