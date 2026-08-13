@@ -17,6 +17,22 @@ positive split irreps vanish, while stable loaded or cross-coupled irreps are
 generated support. The enriched rank-seven law supplies occupation only
 inside its declared class.
 
+The paper now also owns the pair/top exterior closure result. The existing
+top-form closure cannot equivariantly generate the axial pair closure. One
+full-rank three-dimensional seed incidence instead induces the minimal
+`Lambda^2 + Lambda^3` packet with ranks `3 + 1`, one Hodge metric and one
+action unit. A pointed exterior seed with faithful Hodge and
+source-fidelity/no-bypass structure occupies both degrees in the declared
+enriched class. The narrow relation/order seed reduct does not entail that
+grammar, so unrestricted physical base--seed ownership remains open.
+
+## Observer Co-Descent
+
+Rank seven is an upstream typed packet, not observerhood. Operational closure
+also requires occupied carrier support, regular local rank four, stable
+observer--source quantization and a nonzero record/effect, which co-produce the
+observer and its accessible 4D world.
+
 ## Reproduce
 
 ```bash

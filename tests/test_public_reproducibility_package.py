@@ -43,6 +43,7 @@ def test_generated_audits():
         "rank7_parent_law_audit.json": 8,
         "tau_local_standard_composition_audit.json": 8,
         "component_local_p3_joint_occupation_audit.json": 8,
+        "pair_top_exterior_closure_audit.json": 7,
     }
     for name, minimum in checks.items():
         data = json.loads((ROOT / "data/derived" / name).read_text())

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "rank_seed": 3,
+  "rank_degree_two": 3,
+  "rank_degree_three": 1,
+  "rank_closure": 4,
+  "minimum_hessian_eigenvalue": 1.403733341286131,
+  "fidelity_cost_delete_degree_two": 3,
+  "fidelity_cost_delete_degree_three": 1,
+  "checks_passed": 7,
+  "claim_boundary": "Finite witness for the declared pointed-exterior completion; not unrestricted physical base-seed ownership."
+}

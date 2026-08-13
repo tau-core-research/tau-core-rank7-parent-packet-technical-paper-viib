@@ -38,6 +38,7 @@ def main():
         "audit_rank7_parent_law.py",
         "audit_tau_local_standard_composition.py",
         "audit_component_local_p3_joint_occupation.py",
+        "audit_pair_top_exterior_closure.py",
     ]:
         run(py, f"scripts/{script}")
     run("latexmk", "-pdf", "-interaction=nonstopmode", "-halt-on-error",
