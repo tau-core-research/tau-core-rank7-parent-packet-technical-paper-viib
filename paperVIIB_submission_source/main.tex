@@ -14,7 +14,7 @@
 \title{The Rank-Seven Parent Packet:\\Support--Port Reconstruction, Tau-Local Composition, and Class-Minimal Realization\\
 \large Tau Core Technical Paper VII-B}
 \author{Jozsef Olcsak}
-\date{Last revised: 11 August 2026}
+\date{Last revised: 14 August 2026}
 
 \begin{document}
 \maketitle
@@ -98,6 +98,38 @@ VII-A; the scalar-15 and functional-RG specialization is owned by Technical
 Paper VII-C.
 
 \input{p3_main}
+
+\section{Source origin of the pointed exterior grammar}
+
+\begin{theorem}[Conditional exterior-seed selection]
+Let $V_s$ be the finite primitive possibility space owned by the seed. Assume
+that its composition is unital, bilinear, associative and oriented; repeated
+occupation of one primitive direction is excluded, $v^2=0$; and no relation
+other than those forced by these premises is imposed. Then the complete
+unital source grammar is
+\[
+ \mathcal G_s\cong\Lambda^\bullet V_s .
+\]
+The empty word is the distinguished root. If the base supplies a positive
+metric on $V_s$, insertion and contraction generate the corresponding finite
+Clifford action and the pointed cyclic carrier required by the rank-seven
+packet.
+\end{theorem}
+\begin{proof}
+Polarizing $(u+v)^2=0$ gives $uv=-vu$. The universal unital associative
+algebra with precisely these relations is the exterior algebra. Its degree
+zero element is the unique empty word. A positive metric identifies
+$V_s$ with its dual, so exterior multiplication and contraction obey the
+Clifford anticommutator. Acting on the empty word generates the full exterior
+carrier.
+\end{proof}
+
+The tensor algebra is the control obtained by dropping multiplicity exclusion;
+the symmetric algebra is the control obtained by replacing orientation with
+commutation. Hence primitive inventory and composition alone do not force this
+theorem. It identifies the weakest declared source class that realizes the
+pointed packet, while physical occupation by the unrestricted base--seed
+parent remains open.
 
 \input{public_audit}
 
