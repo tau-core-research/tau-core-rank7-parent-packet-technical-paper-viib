@@ -17,6 +17,13 @@ positive split irreps vanish, while stable loaded or cross-coupled irreps are
 generated support. The enriched rank-seven law supplies occupation only
 inside its declared class.
 
+Paper IV's operational source-completeness result adds the precise global
+reading: if the complete packet selector is constant on complete seed fibres,
+the occupied rank-seven packet belongs to the seed-generated physical
+quotient. Inert ambient summands are presentation surplus; a loaded or
+readout-effective same-seed-key extension is a second-source falsifier. The
+narrow reduct does not establish the required fibre constancy.
+
 The paper now also owns the pair/top exterior closure result. The existing
 top-form closure cannot equivariantly generate the axial pair closure. One
 full-rank three-dimensional seed incidence instead induces the minimal
@@ -25,6 +32,14 @@ action unit. A pointed exterior seed with faithful Hodge and
 source-fidelity/no-bypass structure occupies both degrees in the declared
 enriched class. The narrow relation/order seed reduct does not entail that
 grammar, so unrestricted physical base--seed ownership remains open.
+
+## Inherited Minimal Formation Basis
+
+The base is the protected zero-source response structure of one joint law,
+the seed is a response-distinct base-relative source class, and a formed body
+is a stable selected nonneutral response. This split is canonical only after
+the zero-source member is physically fixed. The rank-seven construction does
+not supply that anchor or derive physical universal-seed occupation.
 
 ## Observer Co-Descent
 
