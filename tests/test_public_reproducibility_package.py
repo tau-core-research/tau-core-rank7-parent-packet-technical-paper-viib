@@ -54,6 +54,15 @@ def test_generated_audits():
     )
     assert public["eligible_count"] == 0
     assert public["candidate_count"] >= 35
+    pair = json.loads(
+        (ROOT / "data/derived/minimal_pair_nature_test.json").read_text()
+    )
+    assert pair["candidate_count"] == 31
+    assert pair["eligible_count"] == 0
+    assert pair["checks_passed"] == pair["checks_total"]
+    assert pair["product_free_marginal_disk_falsifier"]["law"] == (
+        "<C_a>^2+<C_b>^2 <= 1"
+    )
 
 
 def test_arxiv_archive_is_self_contained():

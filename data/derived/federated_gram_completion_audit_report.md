@@ -2,16 +2,16 @@
 
 ## Frozen question
 
-Can the 14 individually incomplete public candidate packets be
+Can the 31 individually incomplete public candidate packets be
 combined into one identifying common-source P3 packet?
 
 ## Result
 
 **FEDERATED_MARGINALS_DO_NOT_IDENTIFY_CROSS_ROLE_GRAM**
 
-The current union contains 14 quantum-capable
-candidates, 7 morphology/stress-capable
-candidates, and 12 candidates with some
+The current union contains 28 quantum-capable
+candidates, 15 morphology/stress-capable
+candidates, and 23 candidates with some
 same-source indexing.  It contains **0**
 eligible Q--M cross edge with both stacked rank two and an informationally
 complete symmetrized-product record.

@@ -4,8 +4,8 @@
   "freeze_date": "2026-08-10",
   "source": {
     "path": "minimal_pair_nature_test.json",
-    "sha256": "9464f48741a71a5bc8427300a7e1b748b2ece24e482cf932f4373422663e83d9",
-    "candidate_count": 14
+    "sha256": "6e56087c300d85b43460a7fb0c869e0769bec39e3c79602b87a88d5a93446d4b",
+    "candidate_count": 31
   },
   "question": "Can individually incomplete public experiments be assembled into one identifying common-source P3 packet?",
   "fusion_rule": "A datum may constrain one common Gram only after a source-frozen transport/intertwiner, common action unit and compatible carrier representation have been independently established.",
@@ -105,9 +105,9 @@
       "commuting_wrong_family_anticommutator_norm": 2.0,
       "interpretation": "The scalar normalized-trace Gram is identical, while the operator anticommutator differs. Gram completion is necessary but not sufficient."
     },
-    "quantum_candidate_count": 14,
-    "morphology_candidate_count": 7,
-    "same_source_candidate_count": 12,
+    "quantum_candidate_count": 28,
+    "morphology_candidate_count": 15,
+    "same_source_candidate_count": 23,
     "eligible_cross_edge_count": 0,
     "representative_psd_completions": [
       {

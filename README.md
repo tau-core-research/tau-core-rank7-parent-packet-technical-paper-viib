@@ -75,3 +75,12 @@ Read `.tau-core-kb/COMPACT_CORE.md`, then generate the focused routing pack.
 python .tau-core-kb/scripts/tc_kb.py status
 python .tau-core-kb/scripts/tc_kb.py pack big_picture
 ```
+
+## Product-Free Nature Test Update (2026-08-27)
+
+The minimal pair law implies `<C_a>^2 + <C_b>^2 <= 1` without product
+tomography. A violation on independently reconstructed, source-whitened typed
+roles falsifies the completion; a pass does not confirm Tau. The extended
+executable census now contains 31 candidates and zero eligible packets. The
+Novikov atom--light EPR network is the newest near candidate, but it lacks an
+independent spin/body terminal and typed stacked rank two.
