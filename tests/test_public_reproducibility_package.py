@@ -36,6 +36,10 @@ def test_claim_boundary_and_owned_results():
     assert "unrestricted physical base--seed parent" in main
     assert "Handoff to the joint-terminal assembly" in p3
     assert "Conditional three-level enriched-MVP closure" not in p3
+    assert "Inherited mixed-Hessian source boundary" in main
+    assert "\\Gamma=D_YZ_*=-H^{-1}B" in main
+    assert "p_s\\Gamma\\vert_{\\ker DF}=0" in main
+    assert "Positivity, common mediation and Schur neutrality" in main
 
 
 def test_generated_audits():
