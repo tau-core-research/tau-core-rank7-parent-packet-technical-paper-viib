@@ -113,3 +113,7 @@ selection and interacting local covariance from physical observer identification
 preparation and stable resolution. Those physical claims remain open. No
 empirical score was changed. The [dependency and source-result ledger](data/derived/observer_update_2026_09_14.json) records the assumptions and controls.
 <!-- END OBSERVER UPDATE 20260914 -->
+
+## Three-pillar closure and postulate-reduction update (2026-11-14)
+
+Technical Paper VII-B (`paperVIIB_submission_source/main.tex`) connects the rank-seven support--port packet and its operator-square Clifford selector to `GNSC-P1` and the 14 November 2026 theorems `U1`, `F1`, and `HOMOG-K4` (`Delta_hat_{K_4} = (4/3) P_perp = G_Cl`, `Pi^2 = Pi`, `kappa_dir^bare = 0`), leaving `POST-OCC-NU1` and class membership as the explicit physical boundary (`NATURE_LEVEL_CLOSURE = false`).
