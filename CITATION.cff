@@ -5,5 +5,6 @@ type: article
 authors:
   - family-names: Olcsak
     given-names: Jozsef
+    orcid: "https://orcid.org/0009-0003-7311-6522"
 date-released: 2026-08-10
 license: MIT
